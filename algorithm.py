@@ -1,4 +1,4 @@
-def find_max (L, a, b):
+def find_avg(L, a, b):
     avg = (a + b)/2
     for x in L:
         if x == avg:
