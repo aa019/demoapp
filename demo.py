@@ -37,6 +37,16 @@ def compute():
         print 'yamlInput1: ' + str(yamlInput1)
         print yamlInput1
 
-        result = find_diff(yamlInput1, input2, input3)
+        yamlInput2 = yaml.safe_load(input2)
+        app.logger.debug(yamlInput1)
+        print 'yamlInput2: ' + str(yamlInput2)
+        print yamlInput2
+
+        yamlInput3 = yaml.safe_load(input3)
+        app.logger.debug(yamlInput3)
+        print 'yamlInput3: ' + str(yamlInput3)
+        print yamlInput3
+
+        result = find_diff(yamlInput1, yamlInput2, yamlInput3)
         print result
         return render_template('compute.html', result=result)
