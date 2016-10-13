@@ -6,7 +6,7 @@ class TestSearch(unittest.TestCase):
   	    self.array = [10, 5, 20, 30, 1, 4]
 
   def test_successful(self):
-    self.assertEqual(find_max(self.array), 30)
+    self.assertTrue(find_max(self.array, 15, 5))
 
 
 

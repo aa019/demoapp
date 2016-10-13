@@ -1,6 +1,6 @@
-def find_max (L):
-    max = 0
+def find_max (L, a, b):
+    avg = (a + b)/2
     for x in L:
-        if x > max:
-            max = x
-    return max
+        if x == avg:
+            return true
+    return false

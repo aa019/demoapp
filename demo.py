@@ -24,11 +24,19 @@ def compute():
 		app.logger.debug(input1)
         print 'input1: ' + input1
 
+        input2 = request.form['input2']
+        app.logger.debug(input2)
+        print 'input2: ' + input2
+
+        input3 = request.form['input3']
+        app.logger.debug(input3)
+        print 'input3: ' + input3
+
         yamlInput1 = yaml.safe_load(input1)
         app.logger.debug(yamlInput1)
         print 'yamlInput1: ' + str(yamlInput1)
         print yamlInput1
 
-        result = find_max(yamlInput1)
+        result = find_avg(yamlInput1, input2, input3)
         print result
         return render_template('compute.html', result=result)
