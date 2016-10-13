@@ -6,7 +6,7 @@ class TestSearch(unittest.TestCase):
   	    self.array = [10, 5, 20, 30, 1, 4]
 
   def test_successful(self):
-    self.assertTrue(find_avg(self.array, 15, 5))
+    self.assertEqual(find_avg(self.array, 15, 5), 1)
 
 
 
