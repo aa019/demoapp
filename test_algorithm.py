@@ -11,6 +11,15 @@ class TestSearch(unittest.TestCase):
   def test_successful2(self):
   	self.assertEqual(find_diff(self.array, 5, 15), 1)
 
+  def test_failed(self):
+  	self.assertNotEqual(find_diff(self.array, 3, 5), 1)
+
+  def test_failed2(self):
+  	self.assertNotEqual(find_diff(self.array, 15, 5), 0)
+
+  def tes_failed3(self):
+  	self.assertNotEqual(find_diff(self.array, 4, 3), 0)
+
 
 
 if __name__ == '__main__':
