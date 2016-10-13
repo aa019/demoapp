@@ -1,6 +1,6 @@
-def find_avg(L, a, b):
-    avg = (a + b)/2
+def find_diff(L, a, b):
+    diff = abs(a - b)
     for x in L:
-        if x == avg:
-            return True
-    return False
+        if x == diff:
+            return 1
+    return 0

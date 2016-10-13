@@ -37,6 +37,6 @@ def compute():
         print 'yamlInput1: ' + str(yamlInput1)
         print yamlInput1
 
-        result = find_avg(yamlInput1, input2, input3)
+        result = find_diff(yamlInput1, input2, input3)
         print result
         return render_template('compute.html', result=result)
